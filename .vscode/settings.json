@@ -1,5 +1,8 @@
 {
   "conventionalCommits.scopes": [
-    "typescript"
+    "typescript",
+    "javascript",
+    "vue",
+    "nuxt"
   ]
 }
