@@ -12,6 +12,10 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Content', link: '/welcome/welcome' }
     ],
+    
+    search: {
+      provider: 'local'
+    },
 
     sidebar: generateSidebar({
       documentRootPath: 'docs',
