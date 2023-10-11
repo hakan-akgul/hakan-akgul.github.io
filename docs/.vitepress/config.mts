@@ -3,7 +3,6 @@ import { generateSidebar } from 'vitepress-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:'/docs/',
   title: "hakan akgül",
   description: "blog",
   themeConfig: {
