@@ -18,9 +18,9 @@ features:
   - icon: ✂️
     title: Snippets
     details: Code blocks that just works
-  - icon: 💼
-    title: Docs
-    details: Some information about cases 
+  - icon: 🧐
+    title: Today I Learned
+    details: Little things about daily cases
   - icon: 📄
     title: Blog
     details: My personal experience and thoughts
