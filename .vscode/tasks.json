@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "docs:dev",
+			"problemMatcher": [],
+			"label": "dev",
+			"detail": "vitepress dev docs"
+		},
+		{
+			"type": "npm",
+			"script": "docs:build",
+			"problemMatcher": [],
+			"label": "build",
+			"detail": "vitepress build docs"
+		},
+		{
+			"type": "npm",
+			"script": "docs:preview",
+			"problemMatcher": [],
+			"label": "preview",
+			"detail": "vitepress preview docs"
+		}
+	]
+}

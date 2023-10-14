@@ -4,5 +4,8 @@
     "javascript",
     "vue",
     "nuxt"
+  ],
+  "cSpell.words": [
+    "vitepress"
   ]
 }
