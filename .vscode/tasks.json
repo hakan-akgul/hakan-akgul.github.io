@@ -13,7 +13,11 @@
 			"script": "docs:build",
 			"problemMatcher": [],
 			"label": "build",
-			"detail": "vitepress build docs"
+			"detail": "vitepress build docs",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		},
 		{
 			"type": "npm",

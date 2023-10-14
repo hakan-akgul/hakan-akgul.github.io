@@ -3,7 +3,10 @@
     "typescript",
     "javascript",
     "vue",
-    "nuxt"
+    "nuxt",
+    "html",
+    "css",
+    "config",
   ],
   "cSpell.words": [
     "vitepress"
