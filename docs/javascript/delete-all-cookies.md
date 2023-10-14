@@ -1,4 +1,21 @@
-Add custom html to Google Tag Manager  
+# Add custom html to Google Tag Manager  
+
+- To add custom HTML to Google Tag Manager, follow these steps:
+- Log in to your Google Tag Manager account.
+- Go to the container where you want to add the custom HTML.
+- Click on "Tags" in the left sidebar.
+- Click on "New" to create a new tag.
+- Give your tag a descriptive name.
+- Select "Custom HTML" as the tag type.
+- Copy and paste the provided HTML code into the "HTML" field.
+- Save the tag.
+- Click on "Submit" to publish the changes to your container.
+
+::: warning
+
+Please note that the provided HTML code appears to be a script that deletes cookies. Make sure you understand the purpose and implications of adding this code to your website before proceeding.
+
+:::
 
 ```html
 <script>

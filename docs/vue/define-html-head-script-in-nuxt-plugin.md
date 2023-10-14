@@ -1,3 +1,5 @@
+# Define HTML Head Script in Nuxt Plugin
+
 ::: code-group
 
 ```ts [/plugins/head.js]
