@@ -39,6 +39,13 @@ function n --wraps nnn --description 'support nnn quit and change directory'
     end
 end
 ```
+
+```fish [/Users/user-name/.config/fish/config.fish]
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_TMPFILE=/tmp/.lastd
+```
+
 :::
 
-[reference](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.fish)
+[reference 1](https://github.com/jarun/nnn/blob/master/misc/quitcd/quitcd.fish)
+[reference 2](https://github.com/jarun/nnn/wiki/Basic-use-cases#configure-cd-on-quit)
