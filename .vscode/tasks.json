@@ -1,30 +1,31 @@
 {
-	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "docs:dev",
-			"problemMatcher": [],
+			"detail": "vitepress dev docs",
+			"isBackground": true,
 			"label": "dev",
-			"detail": "vitepress dev docs"
+			"problemMatcher": [],
+			"script": "docs:dev",
+			"type": "npm"
 		},
 		{
-			"type": "npm",
-			"script": "docs:build",
-			"problemMatcher": [],
-			"label": "build",
 			"detail": "vitepress build docs",
 			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
+				"isDefault": true,
+				"kind": "build"
+			},
+			"label": "build",
+			"problemMatcher": [],
+			"script": "docs:build",
+			"type": "npm"
 		},
 		{
-			"type": "npm",
-			"script": "docs:preview",
-			"problemMatcher": [],
+			"detail": "vitepress preview docs",
 			"label": "preview",
-			"detail": "vitepress preview docs"
+			"problemMatcher": [],
+			"script": "docs:preview",
+			"type": "npm"
 		}
-	]
+	],
+	"version": "2.0.0"
 }

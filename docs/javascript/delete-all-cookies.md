@@ -4,7 +4,7 @@
 I recommend to delete all cookies when users want to disable consent settings or if they haven't yet accepted cookies.
 :::
 
-- To add custom HTML to Google Tag Manager, follow these steps:
+To add custom HTML to Google Tag Manager, follow these steps:
 - Log in to your Google Tag Manager account.
 - Go to the container where you want to add the custom HTML.
 - Click on "Tags" in the left sidebar.

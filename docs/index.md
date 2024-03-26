@@ -4,11 +4,11 @@ layout: home
 
 hero:
   name: hakan akgül
-  text: Blog
-  tagline: Welcome to my website, filled with helpful content for you to explore. Thank you for visiting.
+  text: show me the code!
+  tagline: you can find quick solutions for front-end problems, configurations, tools...
   actions:
     - theme: brand
-      text: Go to Content
+      text: go to content
       link: /welcome/welcome
     # - theme: alt
     #   text: API Examples

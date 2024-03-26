@@ -1,5 +1,6 @@
-Welcome to my dev blog!
+Hi!
 
-Explore tutorials, tips, snippets and plugins about front-end.
+I don't like the blogs that explain a problem in a long post.  
+Generally coders have a short time period for solving a problem.
 
-Happy coding!
+Just copy the code and close your 40+ opened tabs!

@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
 
 // https://vitepress.dev/reference/site-config
@@ -28,7 +28,7 @@ export default defineConfig({
       scanStartPath:'/',
       capitalizeFirst: true,
       hyphenToSpace: true,
-      sortMenusOrderNumerically: true,
+      sortMenusOrderNumericallyFromTitle: true,
       includeEmptyFolder: true,
       excludeFolders:['public']
     }),
