@@ -1,12 +1,12 @@
 # Disable accent character popups in macos
 
-I increased these settings for increasing caret browsing speed  
+I edited these settings to increase browsing speed  
 ![Macos keyboard settings](/image/macos-keyboard-settings.png)  
 
 But I faced with this annoying popup  
 ![Keyboard popup](/image/macos-accent-popup.jpeg)
 
-To prevent these popups
+To prevent:
 ``` shell
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
