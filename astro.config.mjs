@@ -8,7 +8,6 @@ const themeArmada = ExpressiveCodeTheme.fromJSONString(jsoncString)
 // https://astro.build/config
 export default defineConfig({
   site: 'https://hakan-akgul.github.io',
-  base: '/docs',
   trailingSlash: 'never',
   integrations: [
     starlight({
