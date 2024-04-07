@@ -1,6 +1,6 @@
 import starlight from '@astrojs/starlight';
 import { ExpressiveCodeTheme } from '@astrojs/starlight/expressive-code';
-import { defineConfig } from 'astro/config';
+import { defineConfig, squooshImageService } from 'astro/config';
 
 const jsoncString = fs.readFileSync(new URL(`./theme-armada.jsonc`, import.meta.url), 'utf-8')
 const themeArmada = ExpressiveCodeTheme.fromJSONString(jsoncString)
@@ -9,6 +9,10 @@ const themeArmada = ExpressiveCodeTheme.fromJSONString(jsoncString)
 export default defineConfig({
   site: 'https://hakan-akgul.github.io',
   trailingSlash: 'never',
+  base: '/',
+  image: {
+    service: squooshImageService(),
+  },
   integrations: [
     starlight({
       tableOfContents: false,

@@ -14,7 +14,7 @@ To prevent:
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
-::: warning
+:::caution
 Need to logout
 :::
 
