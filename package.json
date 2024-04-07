@@ -1,13 +1,19 @@
 {
-  "devDependencies": {
-    "vitepress": "^1.0.1"
-  },
+  "name": "hakan-akgul.github.io",
+  "type": "module",
+  "version": "2.0.0",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "vitepress-sidebar": "^1.21.0"
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/starlight": "^0.21.2",
+    "astro": "^4.5.10",
+    "sharp": "^0.33.3",
+    "typescript": "^5.4.3"
   }
 }

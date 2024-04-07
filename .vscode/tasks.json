@@ -1,29 +1,26 @@
 {
 	"tasks": [
 		{
-			"detail": "vitepress dev docs",
 			"isBackground": true,
 			"label": "dev",
 			"problemMatcher": [],
-			"script": "docs:dev",
+			"script": "dev",
 			"type": "npm"
 		},
 		{
-			"detail": "vitepress build docs",
 			"group": {
 				"isDefault": true,
 				"kind": "build"
 			},
 			"label": "build",
 			"problemMatcher": [],
-			"script": "docs:build",
+			"script": "build",
 			"type": "npm"
 		},
 		{
-			"detail": "vitepress preview docs",
 			"label": "preview",
 			"problemMatcher": [],
-			"script": "docs:preview",
+			"script": "preview",
 			"type": "npm"
 		}
 	],
