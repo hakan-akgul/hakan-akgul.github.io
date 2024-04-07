@@ -1,0 +1,101 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/src/content/docs/guides/CSS",
+      "title": "CSS"
+    },
+    {
+      "path": "[[workspace]]/src/content/docs/guides/fish shell",
+      "title": "fish shell"
+    },
+    {
+      "path": "[[workspace]]/src/content/docs/guides/javascript",
+      "title": "javascript"
+    },
+    {
+      "path": "[[workspace]]/src/content/docs/guides/next",
+      "title": "next"
+    },
+    {
+      "path": "[[workspace]]/src/content/docs/guides/nuxt",
+      "title": "nuxt"
+    },
+    {
+      "path": "[[workspace]]/src/content/docs/guides/nvm",
+      "title": "nvm"
+    },
+    {
+      "path": "[[workspace]]/src/content/docs/guides/VS Code",
+      "title": "VS Code"
+    },
+    {
+      "path": "[[workspace]]/src/content/docs/guides/welcome",
+      "title": "welcome"
+    },
+    {
+      "title": "macOS",
+      "path": "[[workspace]]/src/content/docs/guides/macOS"
+    },
+    {
+      "title": "typescript",
+      "path": "[[workspace]]/src/content/docs/guides/typescript"
+    },
+    {
+      "title": "vue",
+      "path": "[[workspace]]/src/content/docs/guides/vue"
+    }
+  ],
+  "frontMatter.content.publicFolder": {
+    "path": "src/assets",
+    "relative": true
+  }
+}
