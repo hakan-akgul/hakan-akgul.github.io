@@ -16,7 +16,7 @@ export default defineConfig({
   integrations: [
     starlight({
       tableOfContents: false,
-      title: 'hakan akgül',
+      title: 'show me the code!',
       social: {
         github: 'https://github.com/hakan-akgul',
         gitlab: 'https://gitlab.com/hakan-akgul',
