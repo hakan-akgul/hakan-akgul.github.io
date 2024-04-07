@@ -1,4 +1,3 @@
-/* Dark mode colors. */
 :root {
   --navy-lllll: #7390B8;
   --navy-llll: #6686B1;
@@ -22,10 +21,6 @@
   --carnation-ddd: #5e1414;
   --carnation-dddd: #2f0a0a;
 
-
-  --sl-color-accent-low: var(--navy);
-  --sl-color-accent: var(--navy);
-  --sl-color-accent-high: var(--navy-llll);
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #e7eff2;
   --sl-color-gray-2: #bac4c8;
@@ -34,9 +29,106 @@
   --sl-color-gray-5: var(--navy);
   --sl-color-gray-6: var(--navy-dd);
   --sl-color-black: var(--navy-dd);
+
+  --sl-hue-blue: 194;
+  --sl-color-blue-low: hsl(var(--sl-hue-blue), 100%, 30%);
+  --sl-color-blue: hsl(var(--sl-hue-blue), 100%, 60%);
+  --sl-color-blue-high: hsl(var(--sl-hue-blue), 100%, 60%);
+
+  --sl-hue-orange: 48;
+  --sl-color-orange-low: hsl(var(--sl-hue-orange), 100%, 30%);
+  --sl-color-orange: hsl(var(--sl-hue-orange), 100%, 60%);
+  --sl-color-orange-high: hsl(var(--sl-hue-orange), 100%, 60%);
+
+  --sl-hue-purple: 265;
+  --sl-color-purple-low: hsl(var(--sl-hue-purple), 100%, 30%);
+  --sl-color-purple: hsl(var(--sl-hue-purple), 100%, 60%);
+  --sl-color-purple-high: hsl(var(--sl-hue-purple), 100%, 60%) --sl-color-accent-low: var(--navy);
+  --sl-color-accent: var(--navy);
+  --sl-color-accent-high: var(--navy-llll);
+
+
+
+  /* 
+
+  --sl-hue-green: 101;
+  --sl-color-green-low: hsl(var(--sl-hue-green), 39%, 22%);
+  --sl-color-green: hsl(var(--sl-hue-green), 82%, 63%);
+  --sl-color-green-high: hsl(var(--sl-hue-green), 82%, 80%);
+
+
+
+  --sl-hue-red: 339;
+  --sl-color-red-low: hsl(var(--sl-hue-red), 39%, 22%);
+  --sl-color-red: hsl(var(--sl-hue-red), 82%, 63%);
+  --sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
+
+  --sl-color-text: var(--sl-color-gray-2);
+  --sl-color-text-accent: var(--sl-color-accent-high);
+  --sl-color-text-invert: var(--sl-color-accent-low);
+
+  --sl-color-bg: var(--sl-color-black);
+  --sl-color-bg-nav: var(--sl-color-gray-6);
+  --sl-color-bg-sidebar: var(--sl-color-gray-6);
+  --sl-color-bg-inline-code: var(--sl-color-gray-5);
+  --sl-color-bg-accent: var(--sl-color-accent-high);
+
+  --sl-color-hairline-light: var(--sl-color-gray-5);
+  --sl-color-hairline: var(--sl-color-gray-6);
+  --sl-color-hairline-shade: var(--sl-color-black);
+
+  --sl-color-backdrop-overlay: hsla(223, 13%, 10%, 0.66);
+
+  --sl-shadow-sm: 0px 1px 1px hsla(0, 0%, 0%, 0.12), 0px 2px 1px hsla(0, 0%, 0%, 0.24);
+  --sl-shadow-md: 0px 8px 4px hsla(0, 0%, 0%, 0.08), 0px 5px 2px hsla(0, 0%, 0%, 0.08), 0px 3px 2px hsla(0, 0%, 0%, 0.12), 0px 1px 1px hsla(0, 0%, 0%, 0.15);
+  --sl-shadow-lg: 0px 25px 7px hsla(0, 0%, 0%, 0.03), 0px 16px 6px hsla(0, 0%, 0%, 0.1), 0px 9px 5px hsla(223, 13%, 10%, 0.33), 0px 4px 4px hsla(0, 0%, 0%, 0.75), 0px 4px 2px hsla(0, 0%, 0%, 0.25);
+
+  --sl-text-xs: 0.8125rem;
+  --sl-text-sm: 0.875rem;
+  --sl-text-base: 1rem;
+  --sl-text-lg: 1.125rem;
+  --sl-text-xl: 1.25rem;
+  --sl-text-2xl: 1.5rem;
+  --sl-text-3xl: 1.8125rem;
+  --sl-text-4xl: 2.1875rem;
+  --sl-text-5xl: 2.625rem;
+  --sl-text-6xl: 4rem;
+
+  --sl-text-body: var(--sl-text-base);
+  --sl-text-body-sm: var(--sl-text-xs);
+  --sl-text-code: var(--sl-text-sm);
+  --sl-text-code-sm: var(--sl-text-xs);
+  --sl-text-h1: var(--sl-text-4xl);
+  --sl-text-h2: var(--sl-text-3xl);
+  --sl-text-h3: var(--sl-text-2xl);
+  --sl-text-h4: var(--sl-text-xl);
+  --sl-text-h5: var(--sl-text-lg);
+
+  --sl-line-height: 1.8;
+  --sl-line-height-headings: 1.2;
+  --sl-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --sl-font-system-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --__sl-font: var(--sl-font, var(--sl-font-system)), var(--sl-font-system);
+  --__sl-font-mono: var(--sl-font-mono, var(--sl-font-system-mono)), var(--sl-font-system-mono);
+
+  --sl-nav-height: 3.5rem;
+  --sl-nav-pad-x: 1rem;
+  --sl-nav-pad-y: 0.75rem;
+  --sl-mobile-toc-height: 3rem;
+  --sl-sidebar-width: 18.75rem;
+  --sl-sidebar-pad-x: 1rem;
+  --sl-content-width: 45rem;
+  --sl-content-pad-x: 1rem;
+  --sl-menu-button-size: 2rem;
+  --sl-nav-gap: var(--sl-content-pad-x);
+  --sl-outline-offset-inside: -0.1875rem;
+  --sl-z-index-toc: 4;
+  --sl-z-index-menu: 5;
+  --sl-z-index-navbar: 10;
+  --sl-z-index-skiplink: 20;
+  */
 }
 
-/* Light mode colors. */
 :root[data-theme='light'] {
   --sl-color-accent-low: #b0deff;
   --sl-color-accent: #0073aa;
@@ -66,7 +158,18 @@ a:where(.astro-u2l5gyhi) {
 }
 
 a:where(.astro-u2l5gyhi):hover {
-  border-color: var(--carnation);
+  border-color: var(--navy-ll);
+  transition: border-color;
+  transition-duration: 500ms;
+}
+
+a {
+  transition: color !important;
+  transition-duration: 500ms !important;
+}
+
+a:where(.astro-3ii7xxms):hover {
+  color: var(--carnation-ll);
 }
 
 .link-title:where(.astro-u2l5gyhi) {
@@ -79,9 +182,46 @@ a:where(.astro-u2l5gyhi):hover {
   height: 2rem !important;
 }
 
-.expressive-code .frame.has-title pre,
-.expressive-code .frame.has-title code,
-.expressive-code .frame.is-terminal pre,
-.expressive-code .frame.is-terminal code {
-  border-top-right-radius: 4px !important;
+:where(.astro-3ii7xxms)[aria-current=page],
+:where(.astro-3ii7xxms)[aria-current=page]:hover,
+:where(.astro-3ii7xxms)[aria-current=page]:focus {
+  background-color: transparent;
+  color: var(--carnation-l);
+}
+
+
+
+h1:where(.astro-j6tvhyss) {
+  color: var(--carnation-l);
+  font-size: 2rem;
+}
+
+.large:where(.astro-3ii7xxms),
+li:where(.astro-3ii7xxms) {
+  color: var(--navy-lllll);
+}
+
+ul:where(.astro-3ii7xxms) ul:where(.astro-3ii7xxms) li:where(.astro-3ii7xxms) {
+  border-inline-start: none;
+}
+
+.starlight-aside {
+  border-radius: 0.5rem;
+}
+
+
+button:where(.astro-v37mnknz)[data-open-modal] {
+  transition: border-color, color;
+  transition-duration: 300ms;
+}
+
+button:where(.astro-v37mnknz)[data-open-modal]:hover,
+button:where(.astro-v37mnknz)[data-open-modal]:focus-visible {
+  border-color: var(--carnation-l);
+  outline: var(--carnation-l);
+}
+
+.hero:where(.astro-jbfsktt5)>img:where(.astro-jbfsktt5),
+.hero:where(.astro-jbfsktt5)>.hero-html:where(.astro-jbfsktt5) {
+  border-radius: 100%;
 }

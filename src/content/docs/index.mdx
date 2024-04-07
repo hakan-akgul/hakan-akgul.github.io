@@ -1,11 +1,11 @@
 ---
-title: show me the code!
+title: hakan akgül <br/> show me the code!
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
   tagline: you can find quick solutions for front-end problems, configurations, tools...
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/image/boy.jpeg
   actions:
     - text: Go to content
       link: /guides/welcome/welcome
@@ -18,19 +18,17 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+	<Card title="Snippets" icon="magnifier">
+		Code blocks that just works
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Today I Learned" icon="information">
+		Little things about daily cases
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Blog" icon="open-book">
+		My personal experience and thoughts
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Apps, Extensions, Plugins" icon="setting">
+		Tools that simplify my development experience
 	</Card>
 </CardGrid>
