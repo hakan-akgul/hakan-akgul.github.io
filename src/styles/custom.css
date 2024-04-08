@@ -236,3 +236,7 @@ details [data-astro-source-file] {
   border-bottom: 1px solid var(--navy-l);
   border-radius: 0;
 }
+
+[alt="coder"] {
+  width: 30rem;
+}
