@@ -6,13 +6,14 @@ import starlightLinksValidator from 'starlight-links-validator';
 const jsoncString = fs.readFileSync(new URL(`./theme-armada.jsonc`, import.meta.url), 'utf-8')
 const themeArmada = ExpressiveCodeTheme.fromJSONString(jsoncString)
 
-// https://astro.build/config
+import devtoolBreakpoints from "astro-devtool-breakpoints";
+
 export default defineConfig({
   site: 'https://hakan-akgul.github.io',
   trailingSlash: 'never',
   base: '/',
   image: {
-    service: squooshImageService(),
+    service: squooshImageService()
   },
   integrations: [
     starlight({
@@ -51,37 +52,44 @@ export default defineConfig({
             editorTabBarBorderColor: 'var(--navy-d)',
             inlineButtonBackground: 'var(--carnation)',
             inlineButtonBorder: 'var(--carnation)',
-            inlineButtonForeground: 'var(--carnation-lll)',
+            inlineButtonForeground: 'var(--carnation-lll)'
           }
-
         }
       },
       customCss: [
-        './src/styles/custom.css',
+        './src/styles/custom.css'
       ],
       sidebar: [
         {
           label: 'welcome',
-          link: './welcome',
+          link: './welcome'
         },
         {
           label: 'web development',
-          autogenerate: { directory: 'web development' },
-
+          autogenerate: {
+            directory: 'web development'
+          }
         },
         {
           label: 'terminal',
-          autogenerate: { directory: 'terminal' },
+          autogenerate: {
+            directory: 'terminal'
+          }
         },
         {
           label: 'tools',
-          autogenerate: { directory: 'tools' },
+          autogenerate: {
+            directory: 'tools'
+          }
         },
         {
           label: 'keyboard',
-          autogenerate: { directory: 'keyboard' },
-        },
-      ],
+          autogenerate: {
+            directory: 'keyboard'
+          }
+        }
+      ]
     }),
-  ],
+    devtoolBreakpoints()
+  ]
 });

@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.5.10",
     "@astrojs/starlight": "^0.21.2",
     "astro": "^4.5.10",
+    "astro-devtool-breakpoints": "^0.3.0",
     "sharp": "^0.33.3",
     "starlight-links-validator": "^0.7.1",
     "typescript": "^5.4.3"
