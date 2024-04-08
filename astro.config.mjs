@@ -1,5 +1,6 @@
 import starlight from '@astrojs/starlight';
 import { ExpressiveCodeTheme } from '@astrojs/starlight/expressive-code';
+import robots from "astro-robots";
 import { defineConfig, squooshImageService } from 'astro/config';
 import starlightLinksValidator from 'starlight-links-validator';
 
@@ -90,6 +91,7 @@ export default defineConfig({
         }
       ]
     }),
-    devtoolBreakpoints()
+    devtoolBreakpoints(),
+    robots()
   ]
 });
