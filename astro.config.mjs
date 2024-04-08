@@ -18,6 +18,16 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            src: 'https://analytics.eu.umami.is/script.js',
+            'data-website-id': "9524ee71-dc8c-4978-afca-c35b0c789cd4",
+            defer: true,
+          },
+        },
+      ],
       plugins: [ starlightLinksValidator() ],
       tableOfContents: false,
       title: 'show me the code!',
