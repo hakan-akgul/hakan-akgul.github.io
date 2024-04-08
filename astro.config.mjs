@@ -1,6 +1,7 @@
 import starlight from '@astrojs/starlight';
 import { ExpressiveCodeTheme } from '@astrojs/starlight/expressive-code';
 import { defineConfig, squooshImageService } from 'astro/config';
+import starlightLinksValidator from 'starlight-links-validator';
 
 const jsoncString = fs.readFileSync(new URL(`./theme-armada.jsonc`, import.meta.url), 'utf-8')
 const themeArmada = ExpressiveCodeTheme.fromJSONString(jsoncString)
@@ -15,6 +16,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      plugins: [ starlightLinksValidator() ],
       tableOfContents: false,
       title: 'show me the code!',
       social: {
