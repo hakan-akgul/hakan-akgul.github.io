@@ -1,6 +1,10 @@
 ---
 title: Configure fish shell for nnn quitcd
 description: Configure fish shell for nnn quitcd
+tags:
+  - terminal
+categories:
+  - terminal
 ---
 
 ```bash title="~/.config/fish/functions/n.fish"

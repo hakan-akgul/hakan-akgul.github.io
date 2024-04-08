@@ -21,7 +21,8 @@ export default defineConfig({
         github: 'https://github.com/hakan-akgul',
         gitlab: 'https://gitlab.com/hakan-akgul',
         linkedin: 'https://www.linkedin.com/in/hakanakgul',
-        stackOverflow: 'https://stackoverflow.com/users/13446430/hakan-akgul'
+        stackOverflow: 'https://stackoverflow.com/users/13446430/hakan-akgul',
+        email: 'mailto:hakan-akgul@outlook.com'
       },
       expressiveCode: {
         themes: [ themeArmada ],
@@ -58,9 +59,26 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'Guides',
-          autogenerate: { directory: 'guides' },
-        }
+          label: 'welcome',
+          link: './welcome',
+        },
+        {
+          label: 'web development',
+          autogenerate: { directory: 'web development' },
+
+        },
+        {
+          label: 'terminal',
+          autogenerate: { directory: 'terminal' },
+        },
+        {
+          label: 'tools',
+          autogenerate: { directory: 'tools' },
+        },
+        {
+          label: 'keyboard',
+          autogenerate: { directory: 'keyboard' },
+        },
       ],
     }),
   ],

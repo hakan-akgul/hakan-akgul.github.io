@@ -2,46 +2,145 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "default",
+      "name": "docs",
+      "previewPath": "'docs'",
       "pageBundle": false,
-      "previewPath": null,
+      "clearEmpty": true,
       "fields": [
         {
-          "title": "Title",
           "name": "title",
-          "type": "string"
+          "type": "string",
+          "single": true,
+          "required": true
         },
         {
-          "title": "Description",
           "name": "description",
-          "type": "string"
+          "type": "string",
+          "single": true
         },
         {
-          "title": "Publishing date",
-          "name": "date",
+          "name": "editUrl",
+          "type": "string",
+          "single": true,
+          "default": true
+        },
+        {
+          "name": "head",
+          "type": "list",
+          "default": []
+        },
+        {
+          "name": "tableOfContents",
+          "type": "fields",
+          "fields": [
+            {
+              "name": "minHeadingLevel",
+              "type": "number",
+              "default": 2
+            },
+            {
+              "name": "maxHeadingLevel",
+              "type": "number",
+              "default": 3
+            }
+          ],
+          "default": {
+            "minHeadingLevel": 2,
+            "maxHeadingLevel": 3
+          }
+        },
+        {
+          "name": "template",
+          "type": "choice",
+          "choices": [
+            "doc",
+            "splash"
+          ],
+          "default": "doc"
+        },
+        {
+          "name": "hero",
+          "type": "fields",
+          "fields": [
+            {
+              "name": "title",
+              "type": "string",
+              "single": true
+            },
+            {
+              "name": "tagline",
+              "type": "string",
+              "single": true
+            },
+            {
+              "name": "image",
+              "type": "image",
+              "isPreviewImage": true
+            },
+            {
+              "name": "actions",
+              "type": "list",
+              "default": []
+            }
+          ]
+        },
+        {
+          "name": "lastUpdated",
           "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
+          "default": "{{now}}"
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
+          "name": "prev",
+          "type": "boolean"
         },
         {
-          "title": "Is in draft",
-          "name": "draft",
-          "type": "draft"
+          "name": "next",
+          "type": "boolean"
         },
         {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
+          "name": "sidebar",
+          "type": "fields",
+          "fields": [
+            {
+              "name": "order",
+              "type": "number"
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "single": true
+            },
+            {
+              "name": "hidden",
+              "type": "boolean"
+            },
+            {
+              "name": "badge",
+              "type": "string",
+              "single": true
+            }
+          ],
+          "default": {
+            "hidden": false,
+            "attrs": {}
+          }
         },
         {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
+          "name": "banner",
+          "type": "fields",
+          "fields": [
+            {
+              "name": "content",
+              "type": "string",
+              "single": true,
+              "required": true
+            }
+          ]
+        },
+        {
+          "name": "pagefind",
+          "type": "boolean",
+          "default": true
         }
       ]
     }
@@ -50,48 +149,11 @@
   "frontMatter.preview.host": "http://localhost:4321",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]/src/content/docs/guides/CSS",
-      "title": "CSS"
-    },
-    {
-      "path": "[[workspace]]/src/content/docs/guides/fish shell",
-      "title": "fish shell"
-    },
-    {
-      "path": "[[workspace]]/src/content/docs/guides/javascript",
-      "title": "javascript"
-    },
-    {
-      "path": "[[workspace]]/src/content/docs/guides/next",
-      "title": "next"
-    },
-    {
-      "path": "[[workspace]]/src/content/docs/guides/nuxt",
-      "title": "nuxt"
-    },
-    {
-      "path": "[[workspace]]/src/content/docs/guides/nvm",
-      "title": "nvm"
-    },
-    {
-      "path": "[[workspace]]/src/content/docs/guides/VS Code",
-      "title": "VS Code"
-    },
-    {
-      "path": "[[workspace]]/src/content/docs/guides/welcome",
-      "title": "welcome"
-    },
-    {
-      "title": "macOS",
-      "path": "[[workspace]]/src/content/docs/guides/macOS"
-    },
-    {
-      "title": "typescript",
-      "path": "[[workspace]]/src/content/docs/guides/typescript"
-    },
-    {
-      "title": "vue",
-      "path": "[[workspace]]/src/content/docs/guides/vue"
+      "title": "docs",
+      "path": "[[workspace]]/src/content/docs",
+      "contentTypes": [
+        "docs"
+      ]
     }
   ],
   "frontMatter.content.publicFolder": {

@@ -1,6 +1,9 @@
 ---
 title: Escaping dollar sign ($) while writing VS Code snippet
 description: Escaping dollar sign ($) while writing VS Code snippet
+keywords:
+  - vs  code
+  - snippet
 ---
 
 Maybe you try to write javascript template literals in a snippet

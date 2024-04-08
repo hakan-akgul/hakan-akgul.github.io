@@ -1,6 +1,10 @@
 ---
 title: Install python via pyenv on fish shell
 description: Install python via pyenv on fish shell
+tags:
+  - terminal
+categories:
+  - terminal
 ---
 
 ```bash

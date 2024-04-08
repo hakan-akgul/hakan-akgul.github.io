@@ -1,6 +1,10 @@
 ---
 title: Configure Fish Shell for NPM
 description: Configure Fish Shell for NPM
+tags:
+  - terminal
+categories:
+  - terminal
 ---
 
 ```bash

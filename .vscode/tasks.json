@@ -1,9 +1,25 @@
 {
 	"tasks": [
 		{
+			"icon": {
+				"color": "terminal.ansiCyan",
+				"id": "play"
+			},
 			"isBackground": true,
 			"label": "dev",
+			"options": {
+				"statusbar": {
+					"color": "terminal.ansiCyan",
+					"label": "",
+					"running": {
+						"backgroundColor": "statusBarItem.warningBackground"
+					}
+				}
+			},
 			"problemMatcher": [],
+			"runOptions": {
+				"instanceLimit": 1
+			},
 			"script": "dev",
 			"type": "npm"
 		},
@@ -12,14 +28,46 @@
 				"isDefault": true,
 				"kind": "build"
 			},
+			"icon": {
+				"color": "terminal.ansiBlue",
+				"id": "run-all"
+			},
 			"label": "build",
+			"options": {
+				"statusbar": {
+					"color": "terminal.ansiBlue",
+					"label": "",
+					"running": {
+						"backgroundColor": "statusBarItem.warningBackground"
+					}
+				}
+			},
 			"problemMatcher": [],
+			"runOptions": {
+				"instanceLimit": 1
+			},
 			"script": "build",
 			"type": "npm"
 		},
 		{
+			"icon": {
+				"color": "terminal.ansiMagenta",
+				"id": "preview"
+			},
 			"label": "preview",
+			"options": {
+				"statusbar": {
+					"color": "terminal.ansiMagenta",
+					"label": "",
+					"running": {
+						"backgroundColor": "statusBarItem.warningBackground"
+					}
+				}
+			},
 			"problemMatcher": [],
+			"runOptions": {
+				"instanceLimit": 1
+			},
 			"script": "preview",
 			"type": "npm"
 		}

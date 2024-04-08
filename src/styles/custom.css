@@ -53,8 +53,11 @@
   --sl-text-h4: var(--sl-text-lg);
   --sl-text-h5: var(--sl-text-md);
 
-  /* 
+  --sl-sidebar-width: 25rem;
+  --sl-sidebar-pad-x: 0.5rem;
+  --sl-content-width: 60rem;
 
+  /* 
   --sl-hue-green: 101;
   --sl-color-green-low: hsl(var(--sl-hue-green), 39%, 22%);
   --sl-color-green: hsl(var(--sl-hue-green), 82%, 63%);
@@ -114,9 +117,6 @@
   --sl-nav-pad-x: 1rem;
   --sl-nav-pad-y: 0.75rem;
   --sl-mobile-toc-height: 3rem;
-  --sl-sidebar-width: 18.75rem;
-  --sl-sidebar-pad-x: 1rem;
-  --sl-content-width: 45rem;
   --sl-content-pad-x: 1rem;
   --sl-menu-button-size: 2rem;
   --sl-nav-gap: var(--sl-content-pad-x);
@@ -181,6 +181,7 @@ a:where(.astro-3ii7xxms):hover {
 [aria-current=page]:focus {
   background-color: transparent;
   color: var(--carnation-l);
+  font-weight: normal;
 }
 
 h1:where(.astro-j6tvhyss) {
@@ -229,4 +230,9 @@ details [data-astro-source-file] {
 [aria-label="Menu"] {
   box-shadow: none;
   border-radius: 0.4rem;
+}
+
+.separator {
+  border-bottom: 1px solid var(--navy-l);
+  border-radius: 0;
 }

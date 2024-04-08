@@ -1,6 +1,8 @@
 ---
 title: How to set default version of the NVM?
 description: How to set default version of the NVM?
+categories:
+  - terminal
 ---
 
 ```shell
