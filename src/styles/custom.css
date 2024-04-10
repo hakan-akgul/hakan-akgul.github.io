@@ -1,209 +1,34 @@
-:root {
-  --navy-lllll: #7390B8;
-  --navy-llll: #6686B1;
-  --navy-lll: #50719E;
-  --navy-ll: #425E83;
-  --navy-l: #354A68;
-  --navy: #27374D;
-  --navy-d: #223043;
-  --navy-dd: #1D2839;
-  --navy-ddd: #18212F;
-  --navy-dddd: #121A24;
-  --navy-ddddd: #10161F;
-
-  --carnation-llll: #fbd6d6;
-  --carnation-lll: #f7adad;
-  --carnation-ll: #f28383;
-  --carnation-l: #ee5a5a;
-  --carnation: #ea3131;
-  --carnation-d: #bb2727;
-  --carnation-dd: #8c1d1d;
-  --carnation-ddd: #5e1414;
-  --carnation-dddd: #2f0a0a;
-
-  --sl-color-white: #ffffff;
-  --sl-color-gray-1: var(--navy-lllll);
-  --sl-color-gray-2: #ffffff;
-  --sl-color-gray-3: var(--navy-ll);
-  --sl-color-gray-4: var(--navy-l);
-  --sl-color-gray-5: var(--navy);
-  --sl-color-gray-6: var(--navy-dd);
-  --sl-color-black: var(--navy-dd);
-
-  --sl-hue-blue: 194;
-  --sl-color-blue-low: hsl(var(--sl-hue-blue), 100%, 30%);
-  --sl-color-blue: hsl(var(--sl-hue-blue), 100%, 60%);
-  --sl-color-blue-high: hsl(var(--sl-hue-blue), 100%, 60%);
-
-  --sl-hue-orange: 48;
-  --sl-color-orange-low: hsl(var(--sl-hue-orange), 100%, 30%);
-  --sl-color-orange: hsl(var(--sl-hue-orange), 100%, 60%);
-  --sl-color-orange-high: hsl(var(--sl-hue-orange), 100%, 60%);
-
-  --sl-hue-purple: 265;
-  --sl-color-purple-low: hsl(var(--sl-hue-purple), 100%, 30%);
-  --sl-color-purple: hsl(var(--sl-hue-purple), 100%, 60%);
-  --sl-color-purple-high: hsl(var(--sl-hue-purple), 100%, 60%) --sl-color-accent-low: var(--navy);
-  --sl-color-accent: var(--navy);
-  --sl-color-accent-high: var(--navy-llll);
-
-  --sl-text-h1: var(--sl-text-2xl);
-  --sl-text-h2: var(--sl-text-xl);
-  --sl-text-h3: var(--sl-text-xl);
-  --sl-text-h4: var(--sl-text-lg);
-  --sl-text-h5: var(--sl-text-md);
-
-  --sl-sidebar-width: 25rem;
-  --sl-sidebar-pad-x: 0.5rem;
-  --sl-content-width: 60rem;
-
-  /* 
-  --sl-hue-green: 101;
-  --sl-color-green-low: hsl(var(--sl-hue-green), 39%, 22%);
-  --sl-color-green: hsl(var(--sl-hue-green), 82%, 63%);
-  --sl-color-green-high: hsl(var(--sl-hue-green), 82%, 80%);
-
-
-
-  --sl-hue-red: 339;
-  --sl-color-red-low: hsl(var(--sl-hue-red), 39%, 22%);
-  --sl-color-red: hsl(var(--sl-hue-red), 82%, 63%);
-  --sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
-
-  --sl-color-text: var(--sl-color-gray-2);
-  --sl-color-text-accent: var(--sl-color-accent-high);
-  --sl-color-text-invert: var(--sl-color-accent-low);
-
-  --sl-color-bg: var(--sl-color-black);
-  --sl-color-bg-nav: var(--sl-color-gray-6);
-  --sl-color-bg-sidebar: var(--sl-color-gray-6);
-  --sl-color-bg-inline-code: var(--sl-color-gray-5);
-  --sl-color-bg-accent: var(--sl-color-accent-high);
-
-  --sl-color-hairline-light: var(--sl-color-gray-5);
-  --sl-color-hairline: var(--sl-color-gray-6);
-  --sl-color-hairline-shade: var(--sl-color-black);
-
-  --sl-color-backdrop-overlay: hsla(223, 13%, 10%, 0.66);
-
-  --sl-shadow-sm: 0px 1px 1px hsla(0, 0%, 0%, 0.12), 0px 2px 1px hsla(0, 0%, 0%, 0.24);
-  --sl-shadow-md: 0px 8px 4px hsla(0, 0%, 0%, 0.08), 0px 5px 2px hsla(0, 0%, 0%, 0.08), 0px 3px 2px hsla(0, 0%, 0%, 0.12), 0px 1px 1px hsla(0, 0%, 0%, 0.15);
-  --sl-shadow-lg: 0px 25px 7px hsla(0, 0%, 0%, 0.03), 0px 16px 6px hsla(0, 0%, 0%, 0.1), 0px 9px 5px hsla(223, 13%, 10%, 0.33), 0px 4px 4px hsla(0, 0%, 0%, 0.75), 0px 4px 2px hsla(0, 0%, 0%, 0.25);
-
-  --sl-text-xs: 0.8125rem;
-  --sl-text-sm: 0.875rem;
-  --sl-text-base: 1rem;
-  --sl-text-lg: 1.125rem;
-  --sl-text-xl: 1.25rem;
-  --sl-text-2xl: 1.5rem;
-  --sl-text-3xl: 1.8125rem;
-  --sl-text-4xl: 2.1875rem;
-  --sl-text-5xl: 2.625rem;
-  --sl-text-6xl: 4rem;
-
-  --sl-text-body: var(--sl-text-base);
-  --sl-text-body-sm: var(--sl-text-xs);
-  --sl-text-code: var(--sl-text-sm);
-  --sl-text-code-sm: var(--sl-text-xs);
-
-  --sl-line-height: 1.8;
-  --sl-line-height-headings: 1.2;
-  --sl-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --sl-font-system-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  --__sl-font: var(--sl-font, var(--sl-font-system)), var(--sl-font-system);
-  --__sl-font-mono: var(--sl-font-mono, var(--sl-font-system-mono)), var(--sl-font-system-mono);
-
-  --sl-nav-height: 3.5rem;
-  --sl-nav-pad-x: 1rem;
-  --sl-nav-pad-y: 0.75rem;
-  --sl-mobile-toc-height: 3rem;
-  --sl-content-pad-x: 1rem;
-  --sl-menu-button-size: 2rem;
-  --sl-nav-gap: var(--sl-content-pad-x);
-  --sl-outline-offset-inside: -0.1875rem;
-  --sl-z-index-toc: 4;
-  --sl-z-index-menu: 5;
-  --sl-z-index-navbar: 10;
-  --sl-z-index-skiplink: 20;
-  */
-}
-
-:root[data-theme='light'] {
-  --sl-color-accent-low: #b0deff;
-  --sl-color-accent: #0073aa;
-  --sl-color-accent-high: #003653;
-  --sl-color-white: #121a1c;
-  --sl-color-gray-1: #182a2f;
-  --sl-color-gray-2: #2a3b41;
-  --sl-color-gray-3: #495c62;
-  --sl-color-gray-4: #7b8f96;
-  --sl-color-gray-5: #bac4c8;
-  --sl-color-gray-6: #e7eff2;
-  --sl-color-gray-7: #f3f7f9;
-  --sl-color-black: #ffffff;
-}
-
-.pagination-links {
-  display: flex;
-}
-
-.pagination-links a {
-  box-shadow: none;
-  padding: 0.25rem;
-  font-size: var(--sl-text-sm);
-}
-
-.pagination-links span {
-  font-size: var(--sl-text-xs);
-}
-
-.pagination-links a:hover {
-  border-color: var(--navy-ll);
-  transition: border-color;
-  transition-duration: 500ms;
-}
-
-a {
-  transition: color, border-color;
-  transition-duration: 500ms;
-}
-
-a:where(.astro-3ii7xxms):hover {
-  color: var(--carnation-ll);
-}
-
-.link-title:where(.astro-u2l5gyhi) {
-  font-size: 1rem;
-}
-
-[aria-current=page],
-[aria-current=page]:hover,
-[aria-current=page]:focus {
-  background-color: transparent;
-  color: var(--carnation-l);
+@font-face {
+  font-family: 'Ubuntu Mono';
+  /* Use a relative path to the local font file in `url()`. */
+  src: url('../assets/font/UbuntuMono-Bold.ttf') format('ttf');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-h1:where(.astro-j6tvhyss) {
+* {
+  font-family: 'Ubuntu Mono';
+  font-weight: bold;
+  outline: none;
+}
+
+a,
+[data-open-modal] {
+  transition: color, border-color, background-color;
+  transition-duration: 300ms;
+}
+
+/* .link-title:where(.astro-u2l5gyhi) {
+  font-size: 1rem;
+} */
+
+main h1 {
   color: var(--carnation-l);
-}
-
-.large:where(.astro-3ii7xxms),
-li:where(.astro-3ii7xxms) {
-  color: var(--navy-lllll);
-}
-
-details [data-astro-source-file] {
-  border-inline-start: none;
 }
 
 .starlight-aside {
   border-radius: 0.5rem;
-}
-
-[data-open-modal] {
-  transition: border-color, color;
-  transition-duration: 300ms;
 }
 
 [data-open-modal]:hover {
@@ -227,16 +52,41 @@ details [data-astro-source-file] {
   margin-block: 0;
 }
 
-[aria-label="Menu"] {
-  box-shadow: none;
-  border-radius: 0.4rem;
-}
-
 .separator {
-  border-bottom: 1px solid var(--navy-l);
+  border-bottom: 1px solid var(--sl-color-gray-4);
   border-radius: 0;
 }
 
+/* coder image */
+
 [alt="coder"] {
   width: 30rem;
+}
+
+/* mobile menu button */
+
+[aria-label="Menu"] {
+  box-shadow: none;
+  border-radius: 0.4rem;
+  background-color: var(--sl-color-gray-4);
+  box-shadow: none;
+}
+
+[aria-expanded=true] [aria-label="Menu"] {
+  background-color: var(--sl-color-gray-4);
+}
+
+/* giscus */
+.giscus-wrapper {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .expressive-code .copy {
+    display: none !important;
+  }
 }

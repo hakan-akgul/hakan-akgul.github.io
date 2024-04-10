@@ -20,6 +20,11 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      logo: {
+        src: './src/assets/image/logo-5.png',
+        replacesTitle: true,
+        alt: 'logo'
+      },
       components: {
         Pagination: './src/layout/Pagination.astro'
       },
@@ -46,34 +51,50 @@ export default defineConfig({
       expressiveCode: {
         themes: [ themeArmada ],
         styleOverrides: {
+          codeFontFamily: 'Ubuntu Mono',
+          codeFontWeight: 'bold',
           borderColor: 'none',
           borderWidth: '2px',
-          borderRadius: '4px',
-          codeBackground: 'var(--navy-d)',
+          borderRadius: '0.5rem',
+          codeBackground: 'var(--sl-color-gray-3)',
           focusBorder: 'var(--carnation)',
+          textMarkers: {
+            markBackground: 'var(--sl-color-gray-4)',
+            markBorderColor: 'var(--sl-color-gray-1)',
+          },
+          codeFontSize: '1rem',
+          codeLineHeight: '1.2',
           frames: {
-            editorActiveTabBackground: 'var(--navy-d)',
+            editorActiveTabBackground: 'var(--sl-color-gray-3)',
             editorActiveTabBorderColor: 'none',
-            editorActiveTabForeground: 'var(--navy-lllll)',
+            editorActiveTabIndicatorTopColor: 'none',
+            editorActiveTabForeground: 'var(--sl-color-gray-1)',
             editorActiveTabIndicatorBottomColor: 'none',
             editorTabBarBackground: 'none',
             editorTabBarBorderBottomColor: 'none',
             editorTabBorderRadius: '4px',
             terminalBackground: 'var(--navy-d)',
             terminalTitlebarBorderBottomColor: 'none',
-            terminalTitlebarDotsForeground: 'var(--navy-l)',
+            terminalTitlebarDotsForeground: 'var(--sl-color-gray-4)',
             terminalTitlebarDotsOpacity: '100%',
-            terminalTitlebarForeground: 'var(--navy-lll)',
-            terminalTitlebarBackground: 'var(--navy)',
-            editorTabBarBorderColor: 'var(--navy-d)',
-            inlineButtonBackground: 'var(--carnation)',
-            inlineButtonBorder: 'var(--carnation)',
-            inlineButtonForeground: 'var(--carnation-lll)'
+            terminalTitlebarForeground: 'var(--sl-color-gray-white)',
+            terminalTitlebarBackground: 'var(--sl-color-gray-5)',
+            editorTabBarBorderColor: 'var(--sl-color-gray-3)',
+            inlineButtonBackground: 'transparent',
+            inlineButtonBorder: 'var(--carnation-l)',
+            inlineButtonForeground: 'var(--carnation-l)',
+            inlineButtonBorderOpacity: '100%',
+            inlineButtonBackgroundHoverOrFocusOpacity: '100%',
+            inlineButtonBackgroundIdleOpacity: '100%',
+            inlineButtonBackgroundActiveOpacity: '100%'
           }
         }
       },
       customCss: [
-        './src/styles/custom.css'
+        './src/styles/variables.css',
+        './src/styles/sidebar.css',
+        './src/styles/pagination.css',
+        './src/styles/custom.css',
       ],
       sidebar: [
         {

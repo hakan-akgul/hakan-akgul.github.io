@@ -1,0 +1,19 @@
+.pagination-links {
+  display: flex;
+}
+
+.pagination-links a {
+  box-shadow: none;
+  border: 1px solid transparent;
+  padding: 0.25rem;
+  font-size: var(--sl-text-sm);
+  background-color: var(--sl-color-gray-3);
+}
+
+.pagination-links span {
+  font-size: var(--sl-text-xs);
+}
+
+.pagination-links a:hover {
+  border: 1px solid var(--carnation-l);
+}

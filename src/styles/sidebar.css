@@ -1,0 +1,112 @@
+.top-level ul {
+  --sl-sidebar-item-padding-inline: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.top-level li {
+  overflow-wrap: anywhere;
+}
+
+.top-level>li {
+  background-color: var(--sl-color-gray-3);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.top-level ul ul li {
+  margin-inline-start: var(--sl-sidebar-item-padding-inline);
+  padding-inline-start: var(--sl-sidebar-item-padding-inline);
+}
+
+.top-level ul li {
+  border-inline-start: none;
+}
+
+.top-level .large {
+  font-size: var(--sl-text-lg);
+  font-weight: 600;
+  color: var(--sl-color-gray-1);
+}
+
+.top-level>li>details>summary>div>span {
+  color: var(--carnation-l) !important;
+}
+
+.top-level .top-level>li+li {
+  margin-top: 0.75rem;
+}
+
+.top-level summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em var(--sl-sidebar-item-padding-inline);
+  line-height: 1.4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.top-level summary::marker,
+.top-level summary::-webkit-details-marker {
+  display: none;
+}
+
+.top-level .caret {
+  transition: transform 0.2s ease-in-out;
+  flex-shrink: 0;
+}
+
+.top-level :global([dir='rtl']) .caret {
+  transform: rotateZ(180deg);
+}
+
+.top-level [open]>summary .caret {
+  transform: rotateZ(90deg);
+}
+
+.top-level a {
+  display: block;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: var(--sl-color-white);
+  padding: 0.3rem var(--sl-sidebar-item-padding-inline);
+  line-height: 1;
+  border: 1px solid transparent
+}
+
+.top-level a:hover,
+.top-level a:focus {
+  color: var(--sl-color-white);
+  /* background-color: var(--sl-color-gray-4); */
+  border: 1px solid var(--carnation-l);
+}
+
+.top-level [aria-current='page'],
+.top-level [aria-current='page']:hover,
+.top-level [aria-current='page']:focus {
+  font-weight: 400;
+  color: var(--sl-color-white);
+  /* background-color: var(--sl-color-gray-4); */
+  background-color: transparent;
+  border: 1px solid var(--carnation-l);
+}
+
+.top-level a>*:not(:last-child),
+.group-label>*:not(:last-child) {
+  margin-inline-end: 0.25em;
+}
+
+@media (min-width: 50rem) {
+  .top-level>li+li {
+    margin-top: 0.5rem;
+  }
+
+  .top-level .large {
+    font-size: var(--sl-text-base);
+  }
+
+  .top-level a {
+    font-size: var(--sl-text-sm);
+  }
+}
