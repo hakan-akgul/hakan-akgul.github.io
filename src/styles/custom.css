@@ -81,3 +81,8 @@ main h1 {
     display: none !important;
   }
 }
+
+.secondary:hover {
+  border-color: var(--carnation-l);
+  color: var(--carnation-l);
+}

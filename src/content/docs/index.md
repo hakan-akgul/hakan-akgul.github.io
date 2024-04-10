@@ -15,20 +15,3 @@ hero:
     #   link: https://starlight.astro.build
     #   icon: external
 ---
-
-import { Card, CardGrid } from '@astrojs/starlight/components';
-
-<CardGrid>
-	<Card title="Snippets" icon="seti:powershell">
-		Code blocks that just works
-	</Card>
-	<Card title="Today I Learned" icon="puzzle">
-		Little things about daily cases
-	</Card>
-	<Card title="Blog" icon="open-book">
-		My personal experience and thoughts
-	</Card>
-	<Card title="Apps, Extensions, Plugins" icon="rocket">
-		Tools that simplify my development experience
-	</Card>
-</CardGrid>
