@@ -91,6 +91,7 @@ export default defineConfig({
         }
       },
       customCss: [
+        './src/styles/font-face.css',
         './src/styles/variables.css',
         './src/styles/sidebar.css',
         './src/styles/pagination.css',

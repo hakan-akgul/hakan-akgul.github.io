@@ -1,14 +1,5 @@
-@font-face {
-  font-family: 'Ubuntu Mono';
-  /* Use a relative path to the local font file in `url()`. */
-  src: url('../assets/font/UbuntuMono-Bold.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
-  font-family: 'Ubuntu Mono';
+  font-family: 'Ubuntu Mono', 'Courier Fallback';
   font-weight: bold;
   outline: none;
 }
