@@ -9,6 +9,8 @@ const themeArmada = ExpressiveCodeTheme.fromJSONString(jsoncString)
 
 import devtoolBreakpoints from "astro-devtool-breakpoints";
 
+const isProd = import.meta.env.PROD;
+
 export default defineConfig({
   site: 'https://hakan-akgul.github.io',
   trailingSlash: 'never',
@@ -22,9 +24,9 @@ export default defineConfig({
         {
           tag: 'script',
           attrs: {
-            src: 'https://analytics.eu.umami.is/script.js',
-            'data-website-id': "9524ee71-dc8c-4978-afca-c35b0c789cd4",
-            defer: true,
+            'src': isProd && 'https://analytics.eu.umami.is/script.js',
+            'data-website-id': isProd && "9524ee71-dc8c-4978-afca-c35b0c789cd4",
+            'defer': true,
           },
         },
       ],
