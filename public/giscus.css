@@ -76,23 +76,24 @@ main {
   --color-btn-primary-disabled-text: #cdd9e580;
   --color-btn-primary-disabled-bg: var(--navy);
   --color-btn-primary-disabled-border: transparent;
+
   --color-action-list-item-default-hover-bg: #909dab1f;
   --color-segmented-control-bg: #636e7b1a;
-  --color-segmented-control-button-bg: #22272e;
+  --color-segmented-control-button-bg: #636e7b;
   --color-segmented-control-button-selected-border: transparent;
   --color-fg-default: #adbac7;
   --color-fg-muted: #768390;
   --color-fg-subtle: #545d68;
 
-  --color-canvas-default: var(--navy-dd);
+  --color-canvas-default: #636e7b20;
   --color-canvas-overlay: var(--navy-ddd);
-  --color-canvas-inset: var(--navy);
-  --color-canvas-subtle: var(--navy);
-  --color-border-default: var(--navy);
+  --color-canvas-inset: #636e7b10;
+  --color-canvas-subtle: #636e7b30;
+  --color-border-default: transparent;
   --color-border-muted: #373e47;
   --color-neutral-muted: #636e7b66;
 
-  --color-accent-fg: var(--navy);
+  --color-accent-fg: #636e7bcc;
   --color-accent-emphasis: #316dca;
   --color-accent-muted: #4184e466;
   --color-accent-subtle: #388bfd1a;
@@ -110,6 +111,12 @@ main {
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-7);
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8)
+}
+
+* {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
 }
 
 main .pagination-loader-container {
