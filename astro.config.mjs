@@ -20,6 +20,9 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      components: {
+        Pagination: './src/layout/Pagination.astro'
+      },
       head: [
         {
           tag: 'script',
