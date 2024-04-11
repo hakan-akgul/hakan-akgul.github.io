@@ -9,4 +9,4 @@ keywords:
 
 ##### Just `copy the code` and close your 40+ opened tabs!
 
-![coder](../../assets/image/coder.jpeg)
+![coder](../../assets/image/coder.webp)
