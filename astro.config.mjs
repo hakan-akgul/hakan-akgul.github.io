@@ -47,7 +47,8 @@ export default defineConfig({
         gitlab: 'https://gitlab.com/hakan-akgul',
         linkedin: 'https://www.linkedin.com/in/hakanakgul',
         stackOverflow: 'https://stackoverflow.com/users/13446430/hakan-akgul',
-        email: 'mailto:hakan-akgul@outlook.com'
+        email: 'mailto:hakan-akgul@outlook.com',
+        rss: 'https://hakan-akgul.github.io/rss.xml'
       },
       expressiveCode: {
         themes: [ themeArmada ],
