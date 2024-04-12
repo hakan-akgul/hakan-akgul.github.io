@@ -27,7 +27,7 @@ export default defineConfig({
         alt: 'logo'
       },
       components: {
-        Pagination: './src/layout/Pagination.astro'
+        Pagination: './src/components/Pagination.astro'
       },
       head: [
         {
