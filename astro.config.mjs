@@ -38,6 +38,15 @@ export default defineConfig({
             'defer': true,
           },
         },
+        {
+          tag: 'link',
+          attrs: {
+            rel: "alternate",
+            type: "application/rss+xml",
+            title: "show me the code!",
+            href: `https://hakan-akgul.github.io/rss.xml`,
+          }
+        }
       ],
       plugins: [ starlightLinksValidator() ],
       tableOfContents: false,
