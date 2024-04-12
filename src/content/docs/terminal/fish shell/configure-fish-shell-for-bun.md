@@ -5,6 +5,7 @@ tags:
   - terminal
 categories:
   - terminal
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 add this to end of the file

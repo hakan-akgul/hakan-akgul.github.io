@@ -1,6 +1,7 @@
 ---
 title: Define GTM Script in Nuxt plugin with consent management
 description: Define GTM Script in Nuxt plugin with consent management
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 ```ts title="plugins/01.gtm.client.ts"

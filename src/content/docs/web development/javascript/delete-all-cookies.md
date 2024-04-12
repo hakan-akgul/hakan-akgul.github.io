@@ -1,6 +1,7 @@
 ---
 title: Delete all cookies after user disable consent settings
 description: Delete all cookies after user disable consent settings
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 :::note

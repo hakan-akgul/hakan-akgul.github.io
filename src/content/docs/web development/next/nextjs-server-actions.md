@@ -1,6 +1,7 @@
 ---
 title: Next.js server actions without forms
 description: Select data from one component and use it in another via server actions without forms
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 Select data from the list and send to parent component via props  

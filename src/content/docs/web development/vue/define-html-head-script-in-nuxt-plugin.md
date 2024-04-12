@@ -1,6 +1,7 @@
 ---
 title: Define HTML Head Script in Nuxt Plugin
 description: Define HTML Head Script in Nuxt Plugin
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 ```ts title="/plugins/head.js"

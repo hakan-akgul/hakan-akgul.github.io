@@ -1,6 +1,7 @@
 ---
 title: Webkit shadow dom css
 description: Webkit shadow dom css
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 ``` css

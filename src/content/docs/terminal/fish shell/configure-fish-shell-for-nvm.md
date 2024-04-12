@@ -5,6 +5,7 @@ tags:
   - terminal
 categories:
   - terminal
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 1- Install oh my fish [omf](https://github.com/oh-my-fish/oh-my-fish)

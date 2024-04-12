@@ -1,6 +1,7 @@
 ---
 title: Vitepress with bun
 description: Vitepress with bun
+lastUpdated: 2024-04-12T17:18:50.566Z
 ---
 
 ```json title="package.json"

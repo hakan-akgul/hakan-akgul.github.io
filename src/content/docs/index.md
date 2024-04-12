@@ -1,6 +1,6 @@
 ---
 title: show me the code!
-description: Get started building your docs site with Starlight.
+description: me, hakan akgül. you can find quick solutions for front-end problems, configurations, tools...
 template: splash
 hero:
   tagline: me, hakan akgül. you can find quick solutions for front-end problems, configurations, tools...
