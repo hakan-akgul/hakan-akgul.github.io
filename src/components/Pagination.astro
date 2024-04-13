@@ -2,7 +2,9 @@
 import Default from "@astrojs/starlight/components/Pagination.astro";
 import type { Props } from "@astrojs/starlight/props";
 import Giscus from "./Giscus.astro";
+const isProd = import.meta.env.PROD;
 ---
 
 <Default {...Astro.props} />
-<Giscus />
+
+{isProd && <Giscus />}
