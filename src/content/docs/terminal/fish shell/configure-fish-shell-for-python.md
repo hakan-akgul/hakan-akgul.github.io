@@ -1,11 +1,13 @@
 ---
 title: Install python via pyenv on fish shell
 description: Install python via pyenv on fish shell
+sidebar:
+  label: Configure fish shell for python
 tags:
   - terminal
 categories:
   - terminal
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 ```bash

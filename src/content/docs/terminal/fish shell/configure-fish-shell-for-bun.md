@@ -1,11 +1,11 @@
 ---
-title: Configure Fish Shell for bun
-description: Configure Fish Shell for bun
+title: Configure fish shell for bun
+description: Configure fish shell for bun
 tags:
   - terminal
 categories:
   - terminal
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 add this to end of the file

@@ -1,3 +1,7 @@
+.top-level {
+  text-transform: lowercase;
+}
+
 .top-level ul {
   --sl-sidebar-item-padding-inline: 0.5rem;
   list-style: none;

@@ -2,7 +2,7 @@
 title: Welcome
 keywords:
   - welcome
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 ##### I don't like the blogs that explain a problem in a long post.  

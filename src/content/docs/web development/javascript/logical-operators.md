@@ -1,7 +1,9 @@
 ---
-title: Logical AND, OR and Nullish Coalescing Operators 
+title: Logical and, or and nullish coalescing operators 
 description: Logical AND, OR and Nullish Coalescing Operators
-lastUpdated: 2024-04-12T17:18:50.566Z
+sidebar:
+  label: Logical operators
+lastUpdated: 2024-04-12
 ---
 
 ## && (Logical AND):

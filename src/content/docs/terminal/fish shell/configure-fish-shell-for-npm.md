@@ -1,11 +1,11 @@
 ---
-title: Configure Fish Shell for NPM
-description: Configure Fish Shell for NPM
+title: Configure fish shell for npm
+description: Configure fish shell for npm
 tags:
   - terminal
 categories:
   - terminal
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 ```bash

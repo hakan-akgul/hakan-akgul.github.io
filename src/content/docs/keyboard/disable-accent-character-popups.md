@@ -3,7 +3,7 @@ title: Disable accent character popups in macos
 description: Disable accent character popups in macos
 keywords:
   - macos
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 I edited these settings to increase browsing speed  

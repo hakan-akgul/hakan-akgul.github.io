@@ -1,11 +1,11 @@
 ---
-title: Configure Fish Shell for NVM
-description: Configure Fish Shell for NVM
+title: Configure fish shell for nvm
+description: Configure fish shell for nvm
 tags:
   - terminal
 categories:
   - terminal
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 1- Install oh my fish [omf](https://github.com/oh-my-fish/oh-my-fish)

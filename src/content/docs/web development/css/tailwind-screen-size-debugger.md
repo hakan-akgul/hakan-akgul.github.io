@@ -1,7 +1,7 @@
 ---
-title: Tailwind Screen Size Debugger
+title: Tailwind screen size debugger
 description: Tailwind Screen Size Debugger
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 ```html

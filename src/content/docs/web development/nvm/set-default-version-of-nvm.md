@@ -1,9 +1,11 @@
 ---
-title: How to set default version of the NVM?
-description: How to set default version of the NVM?
+title: How to set default version of the nvm?
+description: How to set default version of the nvm?
+sidebar:
+  label: Set default version of nvm
 categories:
   - terminal
-lastUpdated: 2024-04-12T17:18:50.566Z
+lastUpdated: 2024-04-12
 ---
 
 ```shell
