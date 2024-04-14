@@ -79,7 +79,8 @@ main h1 {
   background-color: var(--sl-color-gray-3);
   border-radius: 0.5rem;
   margin-top: 1rem;
-  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
