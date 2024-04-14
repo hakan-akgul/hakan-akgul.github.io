@@ -1,13 +1,13 @@
 import starlight from '@astrojs/starlight';
 import { ExpressiveCodeTheme } from '@astrojs/starlight/expressive-code';
-import robots from "astro-robots";
+import robots from 'astro-robots';
 import { defineConfig, squooshImageService } from 'astro/config';
 import starlightLinksValidator from 'starlight-links-validator';
 
 const jsoncString = fs.readFileSync(new URL(`./theme-armada.jsonc`, import.meta.url), 'utf-8')
 const themeArmada = ExpressiveCodeTheme.fromJSONString(jsoncString)
 
-import devtoolBreakpoints from "astro-devtool-breakpoints";
+import devtoolBreakpoints from 'astro-devtool-breakpoints';
 
 const isProd = import.meta.env.PROD;
 
@@ -20,6 +20,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      favicon: '/favicon.ico',
       logo: {
         src: './src/assets/image/logo.png',
         replacesTitle: true,
@@ -33,19 +34,52 @@ export default defineConfig({
           tag: 'script',
           attrs: {
             'src': isProd && 'https://analytics.eu.umami.is/script.js',
-            'data-website-id': isProd && "9524ee71-dc8c-4978-afca-c35b0c789cd4",
+            'data-website-id': isProd && '9524ee71-dc8c-4978-afca-c35b0c789cd4',
             'defer': true,
           },
         },
         {
           tag: 'link',
           attrs: {
-            rel: "alternate",
-            type: "application/rss+xml",
-            title: "show me the code!",
+            rel: 'alternate',
+            type: 'application/rss+xml',
+            title: 'show me the code!',
             href: `https://hakan-akgul.github.io/rss.xml`,
           }
-        }
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'apple-touch-icon',
+            sizes: '180x180',
+            href: '/apple-touch-icon.png'
+          }
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: '/favicon-32x32.png'
+          }
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: '/favicon-16x16.png'
+          }
+        },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'manifest',
+            href: '/site.webmanifest'
+          }
+        },
       ],
       plugins: [ starlightLinksValidator() ],
       tableOfContents: false,
