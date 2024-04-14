@@ -20,9 +20,8 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      favicon: './src/assets/image/logo-9.png',
       logo: {
-        src: './src/assets/image/logo-9.webp',
+        src: './src/assets/image/logo.png',
         replacesTitle: true,
         alt: 'logo'
       },
